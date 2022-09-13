@@ -12,13 +12,13 @@ int main(void)
 {
 	int str[] = {95, 112, 117, 116, 99, 104, 97, 114};
 
-	int counts siz;
+	int counts, siz;
 
 	siz = sizeof(str) / sizeof(int);
 
-	for (counts = 0; counts < sz; counts++)
+	for (counts = 0; counts < siz; counts++)
 	{
-		_putchar(str[count]);
+		_putchar(str[counts]);
 	}
 
 	_putchar('\n');
