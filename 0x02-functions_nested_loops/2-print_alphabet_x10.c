@@ -10,23 +10,20 @@
  * Return: Always 0
  */
 
-int  print_alphabet_x10(void)
+void print_alphabet_x10(void)
 {
-	int  i = 0, j;
 
-	while (i < 10)
+	char letters = 'a';
+	int i = 0;
+
+	while (i <= 9)
 	{
-		j = 0;
-
-		char letters = 'a';
-
-		while (letters <= 'z' || j < 10)
+		for (letters = 'a'; letters <= 'z'; letters++)
 		{
 			_putchar(letters);
-			letters++;
-			j++;
 		}
 		_putchar('\n');
+
 		i++;
 	}
 }
