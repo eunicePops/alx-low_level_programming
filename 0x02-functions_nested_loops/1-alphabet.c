@@ -6,7 +6,7 @@
  * Description: A function that prints alphabet in lowercase,
  *
  * followed by a new line
- *
+ i*
  * Return: void
  */
 
@@ -14,10 +14,10 @@ void print_alphabet(void)
 {
 	char letters = 'a';
 
-	while (letters < = 'z')
+	while (letters <= 'z')
 	{
 		_putchar(letters);
-		letter++;
+		letters++;
 	}
 	_putchar('\n');
 }
