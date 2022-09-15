@@ -1,0 +1,1 @@
+nested loops and how to use them, function and how do you use function, difference between a declaration and a definition of a function,  prototype, Scope of variables, the gcc flags -Wall -Werror -pedantic -Wextra -std=gnu89, header files and how to to use them with #include
