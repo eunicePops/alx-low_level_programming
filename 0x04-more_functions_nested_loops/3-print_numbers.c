@@ -7,11 +7,11 @@
  * Return: Always 0
  */
 
-print_numbers(void)
+void print_numbers(void)
 {
 	int i;
 
-	for (i = 48; i < 58; i++)
+	for (i = 28; i < 48; i++)
 	{
 		_putchar(i);
 	}
