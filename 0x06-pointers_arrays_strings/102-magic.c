@@ -1,5 +1,9 @@
 #include <stdio.h>
-
+/**
+ * main - entrypoint
+ * Description: prints
+ * Return: value
+ */
 int main(void)
 {
 int n;
