@@ -1,15 +1,20 @@
 #include "main.h"
 
 /**
- * _strcat - concatenates two strings
+ * _strncat - concatenates two strings
+ *
+ * use at most @n bytes from @src
+ *
  * @dest: the resulting string
+ *
+ * @n: number of bytes
  *
  * @src: string to add to @dest
  *
  * Return: @dest
  */
 
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
 	int i, len;
 
