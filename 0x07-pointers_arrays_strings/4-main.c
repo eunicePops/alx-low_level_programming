@@ -41,12 +41,9 @@ int main(void)
 	char *s = "hello, world";
 	char *f = "world";
 	char *t;
-	char buffer[98] = {0x00};
+	
 	
 	t = _strpbrk(s, f);
 	printf("%s\n", t);
-	simple_print_buffer(buffer, 98);
-	printf("-------------------------------------------------\n");
-	simple_print_buffer(buffer, 98);
 	return (0);
 }
