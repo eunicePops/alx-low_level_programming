@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 
-/*8
+/**
  * array_range - Creates an array of integers ordered
  * from min to max, inclusive.
  *
