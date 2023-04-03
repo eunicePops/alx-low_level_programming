@@ -1,16 +1,12 @@
 #include "lists.h"
 
-
 /**
- * print_listint - is a function that
- * prints all the elements
- * of a linked list named listint_t
- * 
+ * print_listint - a function that prints all
+ * the elements of a linked list
  * @h: head of the list
- * 
- * Return: number of nodes
+ *
+ * Return: the tally of nodes
  */
-
 size_t print_listint(const listint_t *h)
 {
 	const listint_t *indicator = h;
@@ -24,3 +20,4 @@ size_t print_listint(const listint_t *h)
 	}
 	return (tally);
 }
+
