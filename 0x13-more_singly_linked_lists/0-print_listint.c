@@ -1,5 +1,6 @@
 #include "lists.h"
 
+
 /**
  * print_listint - is a function that
  * prints all the elements
@@ -7,8 +8,9 @@
  * 
  * @h: head of the list
  * 
- * Return: the return is the number of nodes
+ * Return: number of nodes
  */
+
 size_t print_listint(const listint_t *h)
 {
 	const listint_t *indicator = h;
