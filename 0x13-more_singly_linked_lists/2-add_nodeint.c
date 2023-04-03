@@ -1,8 +1,7 @@
 #include "lists.h"
 
 /**
- * add_nodeint - adds a new at the 
- * begining of linkedlist listint_t
+ * add_nodeint - adds a new at the beginning
  * @head: pointer to the head of the linked list
  * @n: integer n 
  *
