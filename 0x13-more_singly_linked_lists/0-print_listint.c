@@ -1,8 +1,8 @@
 #include "lists.h"
 
 /**
- * print_listint - is a function that 
- * prints all the elements 
+ * print_listint - is a function that
+ * prints all the elements
  * of a linked list named listint_t
  * 
  * @h: head of the list
