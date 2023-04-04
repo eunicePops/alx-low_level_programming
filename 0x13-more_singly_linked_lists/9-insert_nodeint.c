@@ -23,7 +23,7 @@ newnode->n = n;
 
 if (idx == 0)
 {
-newnode->next = temp;
+newnode->next = brief;
 *head = newnode;
 return (newnode);
 }
