@@ -3,7 +3,8 @@
  * insert_nodeint_at_index - a function that adds a new node
  * to a linked list at a given position
  * @head : pointer to the head of the list
- * @idx  : index of the list indicating the position for the new node to be added
+ * @idx  : index of the list indicating
+ * the position for the new node to be added
  *         (index starting point is at 0)
  * @n    : value for the new node to be added
  * Return: pointer to the new node,
