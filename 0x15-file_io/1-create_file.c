@@ -9,8 +9,8 @@
  * 	-1 if it fails: i.e file can not be created
  * 	or  file can not be written
  * 	created file must have those permissions: rw-------
- * 	-1: if filename is NULL
- * 	empty file: if text_content is NULL 
+ * 	It returns -1: if filename is NULL
+ * 	empty file: if text_content is NULL
  */
 int create_file(const char *filename, char *text_content)
 {
