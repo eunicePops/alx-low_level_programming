@@ -17,7 +17,7 @@ int append_text_to_file(const char *filename, char *text_content)
 {
 	int fd;
 	int newletters;
-	int rwpermissions;
+	int rwr;
 
 	if (!filename)
 		return (-1);
@@ -32,9 +32,9 @@ int append_text_to_file(const char *filename, char *text_content)
 		for (newletters = 0; text_content[newletters]; newletters++)
 			;
 
-		rwpermissions = write(fd, text_content, newletters);
+		rwr = write(fd, text_content, newletters);
 
-		if (rwpermissions == -1)
+		if (rwr == -1)
 			return (-1);
 	}
 
