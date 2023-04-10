@@ -34,12 +34,13 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 	readlen = read(fd, buffer, letters);
 	close(fd);
-	if (writelen == -1)
+
+	if (readlen == -1)
 	{
 		free(buffer);
 		return (0);
 	}
-	readlen = write(STDOUT_FILENO, buffer, readlen);
+	writelen = write(STDOUT_FILENO, buffer, readlen);
 	free(buffer);
 	if (readlen != writelen)
 		return (0);
