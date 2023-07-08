@@ -8,30 +8,31 @@
  * Return: unsigned int.
  */
 
+unsigned int binary_to_uint(const char *b)
+{
+	unsigned int result;
+	int length, baze_two;
 
-unsigned int binary_to_uint(const char *b) {
-    unsigned int result = 0;
+	if (!b)
+		return (0);
 
-    if (b == NULL)
-        return 0;
+	result = 0;
 
-    for (int i = 0; b[i] != '\0'; i++) {
-        if (b[i] == '0')
-            result = result * 2;
-        else if (b[i] == '1')
-            result = result * 2 + 1;
-        else
-            return 0;
-    }
+	for (length = 0; b[length] != '\0'; length++)
+		;
 
-    return result;
+	for (length--, baze_two = 1; length >= 0; length--, baze_two *= 2)
+	{
+		if (b[length] != '0' && b[length] != '1')
+		{
+			return (0);
+		}
+
+		if (b[length] & 1)
+		{
+			result += baze_two;
+		}
+	}
+
+	return (result);
 }
-
-int main() {
-    const char *binary = "11010";
-    unsigned int number = binary_to_uint(binary);
-    printf("Decimal: %u\n", number);
-
-    return 0;
-}
-
